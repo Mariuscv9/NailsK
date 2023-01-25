@@ -1,0 +1,317 @@
+$headings-font-family: 'Montserrat', sans-serif;
+
+
+.body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.ul {
+  list-style: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+.navbar-nav .nav-item .nav-link:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+body {
+  font-size: 2em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+}
+
+.socialbtn li {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+.socialbtn li,
+.socialbtn a {
+  height: 52px;
+  display: block;
+}
+
+.instabtn {
+  left: 0px;
+  width: 53px;
+  background: url(../img/butoanetop.png);
+  background-position: 0 0;
+}
+
+.wabtn {
+  left: 63px;
+  width: 53px;
+  background: url(../img/butoanetop.png);
+  background-position: -60px 0;
+}
+
+.fbbtn {
+  left: 126px;
+  width: 53px;
+  background: url(../img/butoanetop.png);
+  background-position: -118px 0;
+
+}
+
+.instabtn a:hover {
+  background: url(../img/butoanetop.png);
+  background-position: 0 -61px;
+}
+
+.wabtn a:hover {
+  left: 60px;
+  width: 50px;
+  background: url(../img/butoanetop.png);
+  background-position: -60px -61px;
+}
+
+.fbbtn a:hover {
+  left: 120px;
+  width: 50px;
+  background: url(../img/butoanetop.png);
+  background-position: -118px -61px;
+
+}
+
+@media screen and (max-width: 960px) {
+  .socialbtn {
+    display: none;
+  }
+
+  .topbar {
+    flex-direction: row-reverse;
+  }
+}
+
+#carouselExampleCaptions .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 82vh;
+  overflow: hidden;
+}
+
+#carouselExampleCaptions .carousel-item:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+#carouselh2{
+  z-index: 100;
+  display: block;
+  position: relative;
+}
+
+#carouseltext {
+  padding-bottom: 300px;
+  
+}
+
+#carouselh2 { 
+  animation: fadeInDown;
+  animation-duration: 2s; 
+}
+
+#carouselp {
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+@keyframes move {
+  from {
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1); /* IE 9 */
+  -webkit-transform: scale(1, 1); /* Safari and Chrome */
+  -o-transform: scale(1, 1); /* Opera */
+  -moz-transform: scale(1, 1); /* Firefox */
+  }
+  to {
+  transform: scale(1.05, 1.05);
+  -ms-transform: scalescale(1.05, 1.05); /* IE 9 */
+  -webkit-transform: scalescale(1.05, 1.05); /* Safari and Chrome */
+  -o-transform: scalescale(1.05, 1.05); /* Opera */
+  -moz-transform: scale(1.05, 1.05);/* Firefox */
+  
+  }
+  }
+  .item .zoomin {
+  animation:move 7s ease infinite; 
+  -ms-animation:move 7s ease infinite;
+  -webkit-animation:move 7s ease infinite;
+  -o-animation:move 7s ease infinite;
+  -moz-animation:move 7s ease infinite;
+  background-color:Black;
+  left:-150px;
+  top:-150px;
+  }
+
+  #carouselpic {
+    animation:move 7s ease infinite;
+  }
+
+
+
+
+.despartitor{
+  height: 130;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+  color: white
+}
+#carouselExampleCaptions{
+  margin-top: 140px;
+}
+
+#dotdiv {
+  border-bottom: dotted 2px rgba(160, 145, 145, 0.76);
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+  
+}
+
+#dotdiv:first-child, #dotdiv:last-child{
+float:left;
+}
+
+@media (min-width: 767px) {
+  #containerlistapreturi {
+      white-space: nowrap !important;
+  }
+}
+
+.imaginipret {
+  transition: transform .4s;
+}
+
+.imaginipret:hover { 
+  -ms-transform: scale(1.2);
+-webkit-transform: scale(1.2); 
+transform: scale(1.2); 
+}
+
+@media screen and (max-width: 960px) {
+  
+  #mentiuni img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px)
+{
+  #mentiuni {text-align: center;}
+}
+
+#gallerymod {
+  position: fixed;
+  padding: 5px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modcontent {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  max-width: 100%;
+  border: none;
+  background-color: transparent;
+  height: auto;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+
+}
+
+#pozecarouselmic {
+  text-align:center;
+  height: 85vh;
+  
+}
+
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #fc7700;
+  background-color: transparent;
+}
+
+#anchor1 {
+  position: relative;
+  top:-180px;
+}
+
+#anchor2 {
+  position: relative;
+  top: -140px;
+}
+
+#anchor3 {
+  position: relative;
+  top: -140px;
+}
+
+#anchor4 {
+  position: relative;
+  top: -140px;
+}
+
+#anchor5 {
+  position: relative;
+  top: -140px;
+}
+
+.galerie1 {
+  padding-top: 200px;
+}
+
+
+
+/*.galerie1{
+  background-image: url(/img/pozebackground/ls1.jpeg),
+   url(/img/pozebackground/ls2.jpeg),
+   url(/img/pozebackground/ls3.jpeg),
+   url(/img/pozebackground/ls4.jpeg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  
+}*/
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
